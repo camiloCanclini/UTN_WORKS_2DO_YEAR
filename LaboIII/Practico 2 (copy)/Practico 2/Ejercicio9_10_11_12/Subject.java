@@ -1,4 +1,4 @@
-package school;
+package Ejercicio9_10_11_12;
 
 import java.util.Objects;
 
@@ -8,6 +8,25 @@ public class Subject {
     private String teacher;
     private SubjectState state;
     private int note;
+
+    public Subject(String name, int grade, String teacher, SubjectState state, int note) {
+        this.name = name;
+        this.grade = grade;
+        this.teacher = teacher;
+        this.state = state;
+        this.note = note;
+    }
+
+    @Override
+    public String toString() {
+        return "Subject{" +
+                "name='" + name + '\'' +
+                ", grade=" + grade +
+                ", teacher='" + teacher + '\'' +
+                ", state=" + state +
+                ", note=" + note +
+                '}';
+    }
 
     public String getName() {
         return name;
